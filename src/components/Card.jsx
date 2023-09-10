@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import dividerDeskTop from "../assets/images/pattern-divider-desktop.svg";
+import dividerMobile from "../assets/images/pattern-divider-mobile.svg";
 import dice from "../assets/images/icon-dice.svg";
 
 const url = "https://api.adviceslip.com/advice";
@@ -24,7 +25,16 @@ export default function Card() {
       <div className="container">
         <h1>ADVICE #{slip.id}</h1>
         <p>{`“${slip.advice}”`}</p>
-        <img src={dividerDeskTop} alt="divider image" className="divider" />
+        <img
+          src={dividerDeskTop}
+          alt="divider image"
+          className="divider-desktop"
+        />
+        <img
+          src={dividerMobile}
+          alt="divider image"
+          className="divider-mobile"
+        />
         <button onClick={getAdvice}>
           <img src={dice} alt="dice" />
         </button>
