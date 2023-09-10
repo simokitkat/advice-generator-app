@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/simokitkat/advice-generator-app)
-- Live Site URL: [Frontend Mentor | Advice generator app](https://advicegeneratorapp.netlify.app)
+- Live Site URL: [Frontend Mentor | Advice generator app](https://advicegeneratorapp-islam-soliman.netlify.app)
 
 ## My process
 
