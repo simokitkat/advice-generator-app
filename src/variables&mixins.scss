@@ -1,0 +1,12 @@
+//colors
+$Dark-Blue: #202733;
+$Dark-Grayish-Blue: #313A48;
+$Grayish-Blue: #4F5D74;
+$Light-Cyan: #CEE3E9;
+$Neon-Green: #53FFAA;
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

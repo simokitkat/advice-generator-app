@@ -1,0 +1,63 @@
+@use './variables&mixins.scss' as *;
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+main{
+  @include flex-center;
+  height: max(810px, 100vh);
+  background-color: $Dark-Blue;
+
+  .card{
+    width: 540px;
+    min-height: 332px;
+    padding-top: 48px;
+    border-radius: 15px;
+    background: $Dark-Grayish-Blue;
+    box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+
+    .container{
+      width: 444px;
+      margin: auto;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-weight: 800;
+      
+      h1{
+        color: $Neon-Green;
+        font-size: 13px;
+        font-style: normal;
+        letter-spacing: 4.086px;
+      }
+  
+      p{
+        color: $Light-Cyan;
+        font-size: 28px;
+        letter-spacing: -0.3px;
+        margin: 24px 0 40px;
+      }
+  
+      button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 64px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+      }    
+    }
+  }
+}
